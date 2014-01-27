@@ -1,5 +1,7 @@
 # SkeletonDeodexer
 
+Warning: to use this, you probably have to have at least a basic understanding of code. This repository has no binary avaliable right now so you will have to compile the project from source code using Visual Studio on Windows. You have to edit at least one line of code to properly configure this. I intend other programming-minded people to be the primary users of this at least for now.
+
 I wrote most of this in January 2014. I apologize if some of this is out of date by the time you see this, but I can assure you that the journey you take to figure out "what the heck is going on" will be worthwhile toward your knowledge of just what the heck is going on with this Android stuff. I made this program to compensate for the deterioration of out-of-date tools made 3 or 4 years ago and learned a bit along the way :)
 
 
@@ -15,8 +17,10 @@ Then, you can run this deodex software and pass in "C:\files_from_my_phone\frame
 
 ## Setup:
 1. Clone the SkeletonDeodexer repository from github. Presumably you have already done this.
-2. Open the project in Visual Studio. I used VS2010. Build the project.
-3. Done!
+2. Open the project in Visual Studio. I used VS2010.
+3. Change the "string frameworkdir = "C:/android/framework/";" line in the source code to point to a place where you have your ROM/phone's system/framework files saved. You might be able to get away without this, too, but I'm not sure. I may make this a command line argument some time later.
+4. Build the project.
+5. Done!
 
 Note that I have a "Post-build Event" configured on the Project. This copies the 7za.exe, smali.jar, and baksmali.jar files from SkeletonDeodexer/external/ to the executable output directory. The same files are used for both Debug and Release.
 

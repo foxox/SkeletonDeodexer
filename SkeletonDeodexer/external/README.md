@@ -1,0 +1,1 @@
+Each tool in this folder is a standalone program, completely separate from SkeletonDeodexer. These programs do not link with SkeletonDeodexer in any way. Their licenses are separate and do not interfere.

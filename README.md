@@ -28,14 +28,16 @@ Note that I have a "Post-build Event" configured on the Project. This copies the
 
 #### 7zip
 1. Get the 7zip command line version from: http://www.7-zip.org/download.html
-2. Navigate to the folder SkeletonDeodexer\SkeletonDeodexer\bin\Debug (or \Release if you built it in Release mode).
+2. Navigate to the folder SkeletonDeodexer/external/
 3. Place 7za.exe into this folder.
+4. Rebuild the project. The Post-build Event command will copy the updated file from /external/ to the output directory.
 
 #### Smali/Baksmali
 1. Get smali and baksmali from: https://bitbucket.org/JesusFreke/smali/downloads
-2. Navigate to the folder SkeletonDeodexer\SkeletonDeodexer\bin\Debug (or \Release if you built it in Release mode).
+2. Navigate to the folder SkeletonDeodexer/external/
 3. Place smali.jar and baksmali.jar into this folder.
 4. Make sure smali.jar and baksmali.jar are named exactly like that -- i.e. remove the version number from the filenames.
+5. Rebuild the project. The Post-build Event command will copy the updated files from /external/ to the output directory.
 
 
 ## Run:

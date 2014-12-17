@@ -1,6 +1,6 @@
 # SkeletonDeodexer
 
-Warning: to use this, you probably have to have at least a basic understanding of code. This repository has no binary avaliable right now so you will have to compile the project from source code using Visual Studio on Windows. You have to edit at least one line of code to properly configure this. I intend other programming-minded people to be the primary users of this at least for now.
+Warning: This project provides the BARE BONES (thus the name) of a tool to "deodex" Android content. To use this, you probably have to have at least a basic understanding of code. This repository has no binary avaliable right now so you will have to compile the project from source code using Visual Studio on Windows. You will have to edit at least one line of code to properly configure this. I intend other technical people to be the primary users of this at least for now.
 
 I wrote most of this in January 2014. I apologize if some of this is out of date by the time you see this, but I can assure you that the journey you take to figure out "what the heck is going on" will be worthwhile toward your knowledge of just what the heck is going on with this Android stuff. I made this program to compensate for the deterioration of out-of-date tools made 3 or 4 years ago and learned a bit along the way :)
 

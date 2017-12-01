@@ -91,6 +91,12 @@ namespace SkeletonDeodex
                 string filefullnameapk = filefullname.Replace(".odex", ".apk");
                 string filenameapk = filename.Replace(".odex", ".apk");
 
+                System.IO.FileInfo fileinfoapk = new System.IO.FileInfo(filefullnameapk);
+                if (!fileinfoapk.Exists)
+                    continue;   //skip framework files for now... no JAR deodexing
+                //else
+                    //Console.WriteLine("aoeu");
+
                 System.Console.WriteLine("Processing " + filename);
 
                 ProcessStartInfo psi = new ProcessStartInfo();

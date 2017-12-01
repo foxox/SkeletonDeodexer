@@ -1,0 +1,29 @@
+Guidance from http://forum.xda-developers.com/showthread.php?t=1852322
+
+I had more here but I must have closed notepad accidentally without saving :\
+Oh well; SkeletonDeodexer's source is equivalent in terms of listing which commands to run.
+
+CUSTOM BOOTCLASSPATH STUFF
+
+/system/framework/core.jar:/system/framework/core-junit.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/framework2.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/mms-common.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/apache-xml.jar:/system/framework/sec_edm.jar:/system/framework/seccamera.jar:/system/framework/scrollpause.jar:/system/framework/stayrotation.jar:/system/framework/smartfaceservice.jar:/system/framework/sc.jar:/system/framework/secocsp.jar:/system/framework/commonimsinterface.jar$
+
+adb pull /system/framework/core.jar C:/android/framework/core.jar
+adb pull /system/framework/core-junit.jar C:/android/framework/core-junit.jar
+adb pull /system/framework/bouncycastle.jar C:/android/framework/bouncycastle.jar
+adb pull /system/framework/ext.jar C:/android/framework/ext.jar
+adb pull /system/framework/framework.jar C:/android/framework/framework.jar
+adb pull /system/framework/framework2.jar C:/android/framework/framework2.jar
+adb pull /system/framework/telephony-common.jar C:/android/framework/telephony-common.jar
+adb pull /system/framework/voip-common.jar C:/android/framework/voip-common.jar
+adb pull /system/framework/mms-common.jar C:/android/framework/mms-common.jar
+adb pull /system/framework/android.policy.jar C:/android/framework/android.policy.jar
+adb pull /system/framework/services.jar C:/android/framework/services.jar
+adb pull /system/framework/apache-xml.jar C:/android/framework/apache-xml.jar
+adb pull /system/framework/sec_edm.jar C:/android/framework/sec_edm.jar
+adb pull /system/framework/seccamera.jar C:/android/framework/seccamera.jar
+adb pull /system/framework/scrollpause.jar C:/android/framework/scrollpause.jar
+adb pull /system/framework/stayrotation.jar C:/android/framework/stayrotation.jar
+adb pull /system/framework/smartfaceservice.jar C:/android/framework/smartfaceservice.jar
+adb pull /system/framework/sc.jar C:/android/framework/sc.jar
+adb pull /system/framework/secocsp.jar C:/android/framework/secocsp.jar
+adb pull /system/framework/commonimsinterface.jar C:/android/framework/commonimsinterface.jar

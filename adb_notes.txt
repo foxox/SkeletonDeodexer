@@ -1,0 +1,32 @@
+Guidance from: http://forum.xda-developers.com/showthread.php?s=31b7f0392f74b4e9354a35950244d946&t=2374008
+
+
+
+Pull:
+
+adb -d pull system/app C:\android\odexbackup\app
+adb -d pull system/framework C:\android\odexbackup\framework
+
+
+Push:
+
+adb -d shell
+mkdir sdcard/deodexed
+mkdir sdcard/deodexed/app
+mkdir sdcard/deodexed/framework
+exit
+
+adb -d push C:\android\deodexed\app sdcard/deodexed/app
+adb -d push C:\android\deodexed\framework sdcard/deodexed/framework
+
+adb -d shell
+su
+stop
+mount -o rw,remount /system/ /system/
+cp /sdcard/deodexed/app/* /system/app/
+rm /system/app/*.odex
+cp /sdcard/deodexed/framework/* /system/framework/
+rm /system/framework/*.odex
+mount -o ro,remount /system/ /system/
+reboot
+
